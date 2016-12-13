@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="javascript.js"></script>
+</head>
+	<body >
+    <table  cellspacing="0" cellpadding="10" rules="cols"  border="0" width="100%">
+    <tr>
+      <td align="center"><h3><a href ="sl.html">Слайдер</a></h3></td>
+      <td align="center"><h3><a href ="form.html">Реэстрація</a></h3></td>
+    </tr>
+    </table>
+    <div id="back">
+      <div id="content">
+
+            <div id="main">
+    <div id="menu1">
+        <ul class="ul1">
+            <li onmouseover="func1('falsemain')" onmouseout="func2()"><a >Минулі роботи</a>
+                <ul class="ul11">
+                    <li><a href="">Обєм круглих фігур</a></li>
+                    <li onmouseover="func11('point2')" onmouseout="func22()"><a onclick="func1('true')" onmouseover="func1('false')">Ви падаюче меню 2 рівня  ></a>
+                        <ul class="ul111">
+                            <li><a href="">1</a></li>
+                            <li><a href=""> 2</a></li>
+                            <li><a href=""> 3</a></li>
+                            <li><a href=""> 3</a></li>
+                            <li><a href=""> 3</a></li>
+                            <li><a href="">3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Обєм циліндра</a></li>
+                </ul>
+            </li>
+
+            <li onmouseover="func1('falsegames')" onmouseout="func2()"><a>Ігри</a>
+                <ul class="ul11">
+                    <li><a href="">Point1</a></li>
+                    <li><a href="">Point2</a></li>
+                    <li><a href="">Point3</a></li>
+                </ul>
+
+            </li>
+
+            <li onmouseover="func1('falsefilms')" onmouseout="func2()"><a onmouseover="func1('false')">Фільми</a>
+                <ul class="ul11">
+                    <li><a href="">Point1</a></li>
+                    <li><a href="">Point2</a></li>
+                    <li onmouseover="func11('point3')" onmouseout="func22()"><a href="#" onclick="func1('true1')" onmouseover="func1('false')">Point3  ></a>
+                        <ul class="ul111" id="ul111">
+                            <li><a href="">f1</a></li>
+                            <li><a href="">f2</a></li>
+                            <li><a href="">f3</a></li>
+                            <li><a href="">f3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </li>
+
+            <li onmouseover="func1('falseserials')" onmouseout="func2()"><a>Серіали</a>
+                <ul class="ul11">
+                    <li><a href="#" onclick="chan('b1')">B1</a></li>
+                    <li><a href="#" onclick="chan('b2')">B2</a></li>
+                    <li><a href="#" onclick="chan('b3')">B3</a></li>
+                </ul>
+
+            </li>
+            <li onmouseover="func1('falsebooks')" onmouseout="func2()"><a>Книги</a>
+                <ul class="ul11">
+                    <li class="li1"><a href="">Part1</a></li>
+                    <li class="li1"><a href="">Part2</a></li>
+                    <li class="li1"><a href="">Part3</a></li>
+                </ul>
+
+            </li>
+        </ul>
+    </div>
+    </div>
+
+        <h1 id="h1">Реєстрація</h1>
+        <p id="p1">Будьласка заповніть усі поля</p>
+        <form id="form">
+            <input id="first_name" type="text" placeholder="Ім'я" onchange="func('first_name')">
+            <input id="last_name" type="text" placeholder="Прізвище" onchange="func('last_name')">
+            <br>
+
+            <input id="date" type="text" placeholder="Дата народження дд.мм.рррр" onchange="func_date_test('date')">
+          <br><br><br><p>Виберіть мову (мови)</p>
+            <input type="checkbox" id="chbox1" onchange="func_chbox(0)"><a href="javascript:func_chbox1(0)">Українська</a>
+            <input type="checkbox" id="chbox2" onchange="func_chbox(1)"><a href="javascript:func_chbox1(1)">Англійська</a><br>
+            <input type="checkbox" id="chbox3" onchange="func_chbox(2)"><a href="javascript:func_chbox1(2)">Російська</a>
+            <input type="checkbox" id="chbox4" onchange="func_chbox(3)"><a href="javascript:func_chbox1(3)">Французька</a><br>
+            <input type="checkbox" id="chbox5" onchange="func_chbox(4)"><a href="javascript:func_chbox1(4)">Німецька</a>
+            <input type="checkbox" id="chbox6" onchange="func_chbox(5)"><a href="javascript:func_chbox1(5)">Іспанська</a><br>
+            <input type="checkbox" id="chbox7" onchange="func_chbox(6)"><a href="javascript:func_chbox1(6)">Польська</a>
+            <br>
+          <br>
+            <input id="email" type="text" placeholder="email" onchange="func_email_test('email')">
+            <br>
+            <textarea id="com" placeholder="Інтереси (макс. кілк. символів 200)" rows="6" maxlength="200" onchange="func_comment_test('com')" onkeyup="func_comment('com')"></textarea>
+          <br>
+            <a id="msy">sgsr</a>
+          <br>
+            <input type="button" id="buttom_ok" value="Reg" onclick="f()">
+          <br>
+        </form>
+      </div>
+
+      <div id="pic_main">
+        <div id="pic1"></div>
+        <div id="pic11" onclick="f1(1)"></div>
+        <div id="pic12" onclick="f1(2)"></div>
+        <div id="pic13" onclick="f1(3)"></div>
+
+        <form>
+          <input id="but_last" type="button", value="Назад" name="last" onclick="but1(1)">
+          <input id="but_next" type="button", value="Вперед" name="next" onclick="but1(2)">
+        </form>
+      </div>
+
+      <div id="other">
+        <input type="text" id="text1" placeholder="Введіть число" required>
+        <input id="but_try" type="button", value="Try" name="next" onclick="but_try()">
+      </div>
+
+    </div>
+  			<h1 id="h1">Реєстрація</h1>
+				<p id="p1">Будь ласка заповніть усі поля</p>
+				<form id="form">
+						<input id="first_name" type="text" placeholder="Ім'я" onchange="func('first_name')">
+						<input id="last_name" type="text" placeholder="Прізвище" onchange="func('last_name')">
+						<br>
+
+						<input id="date" type="text" placeholder="Дата народження дд.мм.рррр" onchange="func_date_test('date')">
+					<br><br><br><p>Виберіть мову (мови)</p>
+						<input type="checkbox" id="chbox1" onchange="func_chbox(0)"><a href="javascript:func_chbox1(0)">Українська</a>
+						<input type="checkbox" id="chbox2" onchange="func_chbox(1)"><a href="javascript:func_chbox1(1)">Англійська</a><br>
+						<input type="checkbox" id="chbox3" onchange="func_chbox(2)"><a href="javascript:func_chbox1(2)">Російська</a>
+						<input type="checkbox" id="chbox4" onchange="func_chbox(3)"><a href="javascript:func_chbox1(3)">Французька</a><br>
+						<input type="checkbox" id="chbox5" onchange="func_chbox(4)"><a href="javascript:func_chbox1(4)">Німецька</a>
+						<input type="checkbox" id="chbox6" onchange="func_chbox(5)"><a href="javascript:func_chbox1(5)">Іспанська</a><br>
+						<input type="checkbox" id="chbox7" onchange="func_chbox(6)"><a href="javascript:func_chbox1(6)">Польська</a>
+						<br>
+					<br>
+						<input id="email" type="text" placeholder="email" onchange="func_email_test('email')">
+						<br>
+						<textarea id="com" placeholder="Інтереси (макс. кілк. символів 500)" rows="6" maxlength="500" onchange="func_comment_test('com')" onkeyup="func_comment('com')"></textarea>
+					<br>
+						<a id="msy">sgsr</a>
+					<br>
+						<input type="button" id="buttom_ok" value="Reg" onclick="f()">
+					<br>
+				</form>
+/<div>
+  </div>
+
+	</body>
+</html>

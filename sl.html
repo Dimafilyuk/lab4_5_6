@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="javascript.js"></script>
+</head>
+	<body onload="load_body(['1.jpg', '2.jpg', '3.jpg', '4.jpg'])" >
+    <table  cellspacing="0" cellpadding="10" rules="cols"  border="0" width="100%">
+    <tr>
+      <td align="center"><h3><a href ="sl.html">Слайдер</a></h3></td>
+  <td align="center"><h3><a href ="form.html">Реэстрація</a></h3></td>
+    </tr>
+    </table>
+<div id="back">
+
+    <div id="pic_main">
+      <div id="pic1"></div>
+      <div id="pic11" onclick="f1(1)"></div>
+      <div id="pic12" onclick="f1(2)"></div>
+      <div id="pic13" onclick="f1(3)"></div>
+
+      <form>
+        <input id="but_last" type="button", value="Назад" name="last" onclick="but1(1)">
+        <input id="but_next" type="button", value="Вперед" name="next" onclick="but1(2)">
+      </form>
+    </div>
+
+    <div id="other">
+      <input type="text" id="text1" placeholder="Введіть число" required>
+      <input id="but_try" type="button", value="Try" name="next" onclick="but_try()">
+    </div>
+
+  </div>
+
+  </div>
+
+	</body>
+</html>
